@@ -1,0 +1,89 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+#page_heading{
+  text-align: center;
+  margin-top: 25px;
+  color:darkslategrey;
+  
+
+}
+#contact-list-container ul{
+  padding:0;
+  list-style: none;
+  width:60%;
+  margin: auto;
+
+
+}
+.contact{
+  padding: 3px 10px;
+  border: 1px solid white;
+  background-color: darkcyan;
+  box-shadow: 1px 1px 1px 1px 1px lightcoral;
+  color: white;
+  display: flex;
+}
+.contact .details{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact .delete-button{
+  width: 20%;
+  padding: 3px;
+  text-align: center;
+  margin-top: 5px;
+}
+.contact .delete-button a{
+  color:white;
+  background-color: red;
+}
+.contact p{
+  margin: 5px 0;
+}
+#new-contact-form{
+  text-align: center;
+  margin-top: 20px;
+  /* background-color: lightpink; */
+
+}
+form input:hover{
+  color:green;
+}
+
+.icons{
+  padding-left: 10px;
+}
+
+#add-button{
+  background-color: dimgray;
+}
+
+.pic{
+  height: 300px;
+  width:500px;
+}
+/* #wallpaper{
+  float:left;
+  padding:100px;
+  /* display:block; */
+  /* width:40%; */
+
+/* } */
+
+/* #container{
+  float:right;
+  padding-bottom:800px;
+   margin:100px;
+  width:50%;
+  
+} */ */
+
+/* .icons{
+  /* padding-right:5px; */
+} */

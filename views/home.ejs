@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+
+        <script
+      src="https://kit.fontawesome.com/38d263e213.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <div id="wallpaper">
+         <img class="pic" src="images/pic-1.jpg">
+        </div>
+        <div id="container">
+        <div>
+             <h1 id="page_heading">
+             <i class="fas fa-address-book"></i>
+
+            My Contact list</h1>
+        </div>
+        <div id="contact-list-container">
+            <ul>
+            <% for (let i of contact_list){ %>
+                <li class="contact">
+                    <div class="details">
+                    <p><i   class="fa fa-user" aria-hidden="true"></i><%= i.name %></p>
+                    <p> <i  class="fa fa-phone" aria-hidden="true"></i><%= i.phone %></p>
+                </div>
+
+                <div class="delete-button">
+                    <a href="/delete-contact/?id=<%=i._id%>">
+                        <i class="fas fa-window-close"></i>
+                    </a>
+                </div>
+                </li>
+            <%}%>
+        </ul>
+    </div>
+
+        <form id="new-contact-form" action="/create-contact" method="Post">
+            <input type="text" name="name" placeholder="Enter Nmae"   required>
+            <input type="number" name="phone" placeholder="Enter Phone no"   required>
+            <button id="add-button"> Add</button>
+             
+        </form>
+        <!-- </div> -->
+        <script type="text/javascript" src="/js/home.js"></script>
+    </div>
+    </body>
+</html>
